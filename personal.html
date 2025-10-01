@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Personal Page
+    </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: white;
+            font-size: 20px;
+        }
+        header {
+            margin-bottom: 46.4px;
+        }
+        .a {
+            display: flex;
+            background-color: black;
+            font-size:20px;
+            font-weight: 400;
+            justify-content: space-around;
+            padding: 10px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        a {
+            color:white;
+            text-decoration: none;
+            transition: transform 3s, color 3s;
+            transition-timing-function: linear;
+        }
+        a:hover {
+            color:orange;
+            transform: rotate(15deg);
+            font-weight: 600;
+        }
+        a:visited {
+            color:white;
+        }
+        a:visited:hover {
+            color:orange;
+        }
+        form {
+            display: inline;
+        }
+        input {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+        button {
+            font-size: 20px;
+            font-weight: 500;
+            background-color: black;
+            width: 5em;
+            position: relative;
+            animation: animate 1s linear 0s infinite alternate;
+        }
+
+        @keyframes animate {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 50px;
+            }
+        }
+        span {
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="a">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="academic.html" target="_blank">Academic Details</a>
+            <a href="achievements.html" target="_blank">Achievements</a>
+        </nav>
+        <h2>My Personal Details</h2>
+    </header>
+    <main>
+        <ol type="1">
+            <span><lI>First Name:</lI></span> Arnav
+            <span><lI>Last Name:</lI></span> Bhatnagar
+            <span><lI>Date of Birth:</lI></span> 16 May 2007
+            <span><lI>Residency:</lI></span> Sahyog Apartments, Mayur Vihar - 1, Delhi - 110091
+            <span><lI>School:</lI></span> Rishabh Public School
+            <span><lI>College (Current):</lI></span> Shaheed Sukhdev College Of Business Studies
+            <span><lI>Single Child (Yes/No):</lI></span> Yes
+            <span><lI>Contact Number:</lI></span> +91 8368075818
+            <span><lI>College Email:</lI></span> arnav.25710@sscbs.du.ac.in
+        </ol>
+        <button>
+            <a href = 'mailto:arnav.25710@sscbs.du.ac.in' target = '_main'>Click to Mail</a>
+        </button>
+    </main>
+</body>
+</html>

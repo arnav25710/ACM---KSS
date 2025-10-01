@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Academic Page
+    </title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+        header {
+            margin-bottom: 46.4px;
+        }
+        .a {
+            display: flex;
+            background-color: black;
+            font-size:20px;
+            font-weight: 400;
+            justify-content: space-around;
+            padding: 10px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        a {
+            color:white;
+            text-decoration: none;
+            transition: transform 3s, color 3s;
+            transition-timing-function: linear;
+        }
+        a:hover {
+            color:orange;
+            transform: rotate(15deg);
+            font-weight: 600;
+        }
+        a:visited {
+            color:white;
+        }
+        a:visited:hover {
+            color:orange;
+        }
+        form {
+            display: inline;
+        }
+        input {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+        button {
+            font-size: 20px;
+            font-weight: 500;
+            background-color: black;
+            width: 5em;
+            position: relative;
+            animation: animate 1s linear 0s infinite alternate;
+        }
+
+        @keyframes animate {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 50px;
+            }
+        }
+        img {
+            height: 5%;
+            width: 5%;
+        }
+        div {
+            display: flex;
+            align-items: flex-start;
+            gap: 300px;
+        }
+        div img {
+            width: 15%
+        }
+        table, th, td {
+            color: white;
+            width: 900px;
+            border: 2px solid peru;
+        }
+        caption {
+            text-align: left;
+            color: khaki;
+            font-size: 20px
+        }
+        caption a img {
+            height: 10%;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="a">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="achievements.html" target="_blank">Achievements</a>
+            <a href="personal.html" target="_blank">Personal Details</a>
+        </nav>
+        <h2>
+            Academic Details:
+        </h2>
+    </header>
+    <main>
+        <div>
+            <table>
+                <caption>
+                    <a href = 'https://www.cbse.gov.in/' target = '_main'>
+                    <img src = 'https://www.cbse.gov.in/images//logo.png' alt = 'CBSE'>
+                    </a>
+                    <br>
+                    Class 12 CBSE Board Result
+                </caption>
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject Name</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>301</td>
+                    <td>English</td>
+                    <td>076</td>
+                    <td>020</td>
+                    <td>096</td>
+                </tr>
+                <tr>
+                    <td>041</td>
+                    <td>Mathematics</td>
+                    <td>071</td>
+                    <td>020</td>
+                    <td>091</td>
+                </tr>
+                <tr>
+                    <td>042</td>
+                    <td>Physics</td>
+                    <td>059</td>
+                    <td>030</td>
+                    <td>089</td>
+                </tr>
+                <tr>
+                    <td>043</td>
+                    <td>Chemistry</td>
+                    <td>065</td>
+                    <td>030</td>
+                    <td>095</td>
+                </tr>
+                <tr>
+                    <td>065</td>
+                    <td>Informatic Practices</td>
+                    <td>070</td>
+                    <td>030</td>
+                    <td>100</td>
+                </tr>
+            </table>
+            <img src = 'https://cdn-icons-png.flaticon.com/512/10438/10438144.png'>
+        </div>
+    </main>
+</body>
+</html>

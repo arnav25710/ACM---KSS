@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Review
+    </title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+        header {
+            font-size: 25px;
+            color: khaki;
+        }
+        a {
+            color: brown;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:visited:hover {
+            color: violet;
+        }
+        form {
+            font-size: 20px;
+            color: burlywood;
+        }
+        .a {
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Review My Website:</h2>
+    </header>
+    <main>
+        <form action = '#' method = 'post'>
+            <label for = 'name'>Your Name:</label>
+            <input type = 'text' id = 'name' name = 'name' placeholder = 'Name' required>
+            <br>
+            <label for = 'gender'>Your Gender:</label>
+            <br>
+            <label class = 'a' for = 'Male'>Male</label>
+            <input type = 'radio' id = 'male' name = 'gender' value = 'Male' required>
+            <br>
+            <label class = 'a' for = 'Female'>Female</label>
+            <input type = 'radio' id = 'female' name = 'gender' value = 'Female' required>
+            <br>
+            <label class = 'a' for = 'other'>Other</label>
+            <input type = 'radio' id = 'other' name = 'gender' value = 'Other' required>
+            <br>
+            <label for = 'rollno'>Your Roll Number:</label>
+            <input type = 'text' id = 'rollno' name = 'rollno' placeholder = '25xxx' required>
+            <br>
+            <label for = 'dob'>Your Date of Birth:</label>
+            <input type = 'date' id = 'dob' name = 'dob' required>
+            <br>
+            <label for = 'email'>Your Email:</label>
+            <input type = 'email' id = 'email' name = 'email' placeholder = 'xyz@gmail.com' required>
+            <br>
+            <label for = 'review'>Rate my website out of 10:</label>
+            <select id = 'review' name = 'review' required>
+                <option value = '1'>1</option>
+                <option value = '2'>2</option>
+                <option value = '3'>3</option>
+                <option value = '4'>4</option>
+                <option value = '5'>5</option>
+                <option value = '6'>6</option>
+                <option value = '7'>7</option>
+                <option value = '8'>8</option>
+                <option value = '9'>9</option>
+                <option value = '10'>10</option>
+            </select>
+            <br>
+            <input type = 'submit'>
+            <input type = 'reset'>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <a href= 'home.html'>
+            Go Back to Home Page
+        </a>
+    </footer>
+</body>
+</html>

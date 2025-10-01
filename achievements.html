@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Achievements Page
+    </title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+        header {
+            margin-bottom: 46.4px;
+        }
+        .a {
+            display: flex;
+            background-color: black;
+            font-size:20px;
+            font-weight: 400;
+            justify-content: space-around;
+            padding: 10px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+        a {
+            color:white;
+            text-decoration: none;
+            transition: transform 3s, color 3s;
+            transition-timing-function: linear;
+        }
+        a:hover {
+            color:orange;
+            transform: rotate(15deg);
+            font-weight: 600;
+        }
+        a:visited {
+            color:white;
+        }
+        a:visited:hover {
+            color:orange;
+        }
+        form {
+            display: inline;
+        }
+        input {
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+        button {
+            font-size: 20px;
+            font-weight: 500;
+            background-color: black;
+            width: 5em;
+            position: relative;
+            animation: animate 1s linear 0s infinite alternate;
+        }
+
+        @keyframes animate {
+            from {
+                left: 0px;
+            }
+            to {
+                left: 50px;
+            }
+        }
+        main {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="a">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="academic.html" target="_blank">Academic Details</a>
+            <a href="personal.html" target="_blank">Personal Details</a>
+        </nav>
+        <h2>Achievements:</h2>
+    </header>
+    <main>
+       <ul>
+        <li>Got certification for the 1st Place in Vocal Music from Kalashram</li>
+        <li>Achieved 1st rank in the one of the annual sports day competitions held in school</li>
+        <li>Achieved meritorious marks in 10th standard </li>
+        <li>Achieved meritorious marks in 12th standard</li>
+       </ul>
+    </main>
+</body>
+</html>
